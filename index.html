@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGrid | Making Electricity Easier to Understand</title>
+<style>
+:root{--navy:#10243a;--green:#217a5b;--mint:#e9f5ee;--cream:#f7f7f1;--ink:#203040;--muted:#607080;--line:#dce5df;--orange:#e9a23b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+header{background:var(--navy);color:#fff;padding:18px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.brand{font-weight:850;letter-spacing:.04em;font-size:1.2rem}nav a{color:#eaf4ef;text-decoration:none;margin-left:20px;font-size:.95rem}nav a:hover{text-decoration:underline}
+main{max-width:1120px;margin:auto;padding:40px 22px 76px}.hero{padding:34px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800;color:var(--green)}h1{font-size:clamp(2.7rem,6vw,5.3rem);line-height:1.02;letter-spacing:-.05em;color:var(--navy);max-width:900px;margin:14px 0 22px}.lead{font-size:1.2rem;max-width:760px;color:#425568}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.button{display:inline-block;background:var(--green);color:white;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800}.button.secondary{background:transparent;color:var(--green);border:1px solid #b8d3c3}.hero-note{margin-top:32px;border-left:4px solid var(--orange);padding:8px 0 8px 16px;max-width:720px;color:var(--muted)}
+section{margin-top:56px}.section-head{display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:start}.section-number{font-size:.82rem;font-weight:850;color:var(--green);letter-spacing:.12em;padding-top:9px}.section-title{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.15;letter-spacing:-.03em;color:var(--navy);margin:0 0 12px}.section-intro{max-width:760px;color:var(--muted);margin:0 0 24px}.content{margin-left:158px}.problem-grid,.bubble-grid,.steps,.alternatives{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:23px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0;color:#526272}.bubble-grid{grid-template-columns:repeat(3,1fr)}.bubble{background:var(--mint);border-radius:20px;padding:20px;min-height:150px}.bubble .icon{font-size:1.55rem}.bubble h3{margin:8px 0 6px;color:var(--navy)}.bubble p{margin:0;color:#50675b;font-size:.95rem}.steps{grid-template-columns:repeat(3,1fr)}.step-num{font-size:.8rem;color:var(--green);font-weight:850;letter-spacing:.12em}.alt-label{font-size:.78rem;color:var(--green);font-weight:850;text-transform:uppercase;letter-spacing:.1em}.business-model{background:var(--navy);color:#fff;border-radius:24px;padding:28px}.business-model h3{margin-top:0;font-size:1.5rem}.business-model p{color:#dce7ee;max-width:800px}.business-model .tag{display:inline-block;border:1px solid #668095;border-radius:99px;padding:6px 10px;margin:4px 5px 0 0;font-size:.85rem}.closing{background:var(--mint);border-radius:24px;padding:34px;margin-top:56px}.closing h2{font-size:2rem;line-height:1.2;color:var(--navy);margin:0 0 10px}.closing p{max-width:720px;color:#50675b}footer{background:var(--navy);color:#dce7ee;text-align:center;padding:28px 6vw}footer a{color:#b8e2c7}
+@media(max-width:800px){.section-head{grid-template-columns:1fr;gap:5px}.content{margin-left:0}.bubble-grid,.steps,.problem-grid,.alternatives{grid-template-columns:1fr}.hero{padding-top:12px}nav a{margin-left:0;margin-right:14px}main{padding-left:17px;padding-right:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">EduGrid<span style="color:#8ed1a9">.</span></div>
+  <nav><a href="#problem">The problem</a><a href="#why">Why EduGrid</a><a href="#how">How it works</a><a href="demo.html">Try the demo</a></nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="eyebrow">A student project · Energy education</div>
+    <h1>Helping students make sense of renewable electricity.</h1>
+    <p class="lead">EduGrid is an educational website concept designed to make electricity demand and renewable generation easier to explore. Instead of only reading charts and large figures, students can test simple scenarios and discuss what changes.</p>
+    <div class="actions"><a class="button" href="demo.html">Explore the interactive demo ↗</a><a class="button secondary" href="#how">See how it works</a></div>
+    <p class="hero-note">The prototype uses fictional teaching values. It is not connected to live electricity data and does not predict Ireland’s electricity supply.</p>
+  </div>
+
+  <section id="problem">
+    <div class="section-head"><div class="section-number">SECTION 01</div><div><h2 class="section-title">The problem and the user</h2><p class="section-intro">Electricity statistics can be difficult to interpret when they are presented only as abstract numbers, charts or technical reports.</p></div></div>
+    <div class="content">
+      <div class="problem-grid">
+        <article class="card"><h3>The problem</h3><p>Students may learn that wind and solar are important to the energy transition, but it can be hard to visualise how renewable output and electricity demand relate to each other. Static figures can make the topic feel distant from everyday life.</p></article>
+        <article class="card"><h3>The intended users</h3><p>EduGrid is aimed at secondary-school teachers and students in Ireland. It could support classroom discussion, data interpretation and introductory learning about renewable energy and the electricity system.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="section-head"><div class="section-number">SECTION 02</div><div><h2 class="section-title">Why EduGrid?</h2><p class="section-intro">The concept focuses on turning passive information into an activity students can question and investigate.</p></div></div>
+    <div class="content">
+      <div class="bubble-grid">
+        <article class="bubble"><div class="icon">📊</div><h3>Make data clearer</h3><p>Present simplified values in a format that is easier to compare.</p></article>
+        <article class="bubble"><div class="icon">🎚️</div><h3>Experiment</h3><p>Change wind, solar and demand settings and observe the model’s response.</p></article>
+        <article class="bubble"><div class="icon">🔎</div><h3>Ask questions</h3><p>Explore what happens when one condition changes at a time.</p></article>
+        <article class="bubble"><div class="icon">🏫</div><h3>Support lessons</h3><p>Use short investigations as a starting point for classroom discussion.</p></article>
+        <article class="bubble"><div class="icon">🌱</div><h3>Build energy awareness</h3><p>Introduce relationships between renewable generation and electricity use.</p></article>
+        <article class="bubble"><div class="icon">💬</div><h3>Discuss limitations</h3><p>Encourage students to ask what a simplified model leaves out.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="section-head"><div class="section-number">SECTION 03</div><div><h2 class="section-title">How it works</h2><p class="section-intro">A possible classroom journey through the EduGrid concept.</p></div></div>
+    <div class="content">
+      <div class="steps">
+        <article class="card"><div class="step-num">STEP 01</div><h3>Start with a question</h3><p>For example: what might happen to a simplified renewable coverage score if wind output drops?</p></article>
+        <article class="card"><div class="step-num">STEP 02</div><h3>Change one value</h3><p>Move one slider while keeping the other values fixed, so the comparison is easier to interpret.</p></article>
+        <article class="card"><div class="step-num">STEP 03</div><h3>Compare and explain</h3><p>Record the result, compare scenarios and discuss why this model is not a real grid forecast.</p></article>
+      </div>
+      <div class="actions"><a class="button" href="demo.html">Try the demo page ↗</a></div>
+    </div>
+  </section>
+
+  <section id="alternatives">
+    <div class="section-head"><div class="section-number">SECTION 04</div><div><h2 class="section-title">Existing resources and alternatives</h2><p class="section-intro">EduGrid would complement—not replace—trusted energy information and teaching resources.</p></div></div>
+    <div class="content">
+      <div class="alternatives">
+        <article class="card"><div class="alt-label">Grid information</div><h3>EirGrid</h3><p>Publishes information about Ireland’s electricity transmission system and related system data. EduGrid’s proposed role is to provide a simpler classroom activity, while learners can consult official sources for real information.</p></article>
+        <article class="card"><div class="alt-label">Energy education</div><h3>SEAI</h3><p>Provides energy and sustainability information and educational resources. EduGrid could sit alongside those resources as an interactive scenario-based learning aid.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="model">
+    <div class="section-head"><div class="section-number">SECTION 05</div><div><h2 class="section-title">Proposed business model</h2><p class="section-intro">This is an early concept rather than an operating service.</p></div></div>
+    <div class="content">
+      <div class="business-model"><h3>Keep the core classroom experience accessible</h3><p>A potential future version could offer free basic activities for students and teachers, with optional teacher resources, lesson packs or school-level features if there were evidence of demand. Any real business model would need to be tested with users and designed around school budgets and accessibility.</p><span class="tag">Free core experience</span><span class="tag">Optional teaching resources</span><span class="tag">School feedback</span></div>
+    </div>
+  </section>
+
+  <div class="closing"><h2>Ready to test a scenario?</h2><p>Open the interactive demo to change wind output, solar output and electricity demand. Use the questions to compare conditions and think critically about what the simplified model can—and cannot—tell you.</p><a class="button" href="demo.html">Open the EduGrid demo ↗</a></div>
+</main>
+<footer><p><strong>EduGrid</strong> · Student project prototype</p><p>Educational concept · Fictional demo values · No live grid connection</p><p><a href="demo.html">Open the interactive demo</a></p></footer>
+</body>
+</html>
